@@ -1,0 +1,34 @@
+{
+  "name": "basic-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "linkwp": "npm link webpack style-loader css-loader sass-loader source-map-loader babel-loader ts-loader mini-css-extract-plugin webpack-bundle-analyzer friendly-errors-webpack-plugin @babel/preset-env",
+    "linkts": "npm link typescript ts-node ts-jest",
+    "linkall": "npm run linkwp && npm run linkts && npm link node-sass",
+    "start-1": "npm run linkall && webpack-dev-server",
+    "tscwatch": "rm -rf dist && tsc --target 'es5' --watch",
+    "wds": "sleep 5 && NODE_ENV=development webpack-dev-server",
+    "start": "npm-run-all --parallel tscwatch wds",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "my-react-bootstrap": "file:/Users/denis/Sites/packages/my-react-bootstrap",
+    "react": "^16.8.2",
+    "react-share": "^2.4.0",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
+    "@types/jest": "^24.0.6",
+    "@types/node": "^11.9.4",
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-share": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react-hot-loader": "^4.8.4"
+  }
+}

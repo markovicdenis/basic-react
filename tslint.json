@@ -1,0 +1,39 @@
+{
+  "rules": {
+    "max-line-length": {
+      "options": [920]
+    },
+    "new-parens": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": false,
+    "no-console": {
+      "severity": "none",
+      "options": [
+        "debug",
+        "info",
+        "log",
+        "time",
+        "timeEnd",
+        "trace"
+      ]
+    },
+    "quotemark": [true, "single", "jsx-double", "avoid-escape", "avoid-template"],
+    "semicolon": [true, "never"],
+    "indent": [true, "spaces", 2],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any",
+        "named-imports-order": "lowercase-first"
+      }
+    ],
+    "no-duplicate-imports": true
+  },
+  "jsRules": {
+    "max-line-length": {
+      "options": [120]
+    }
+  }
+}
